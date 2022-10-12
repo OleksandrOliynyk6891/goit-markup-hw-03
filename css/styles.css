@@ -15,6 +15,7 @@
     --section-background-color:  #F5F4FA;
     --color-border-header: #ECECEC;
     --examples-work-gap: 30px;
+    --examples-item-bordcolor: #EEEEEE;
 }
 .visualli-hiden {
     position: absolute;
@@ -188,7 +189,7 @@ background-color: var(--button-hov-foc);
 .team .container {
     padding-top: 94px;
     padding-bottom: 94px;
-    outline: 1px solid darkred;
+    /* outline: 1px solid darkred; */
 } 
 .team .container {
     padding-top: 94px;
@@ -229,6 +230,7 @@ background-color: var(--button-hov-foc);
 .team-title {
     margin-top: 0px;
     margin-bottom: 50px;
+
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -283,12 +285,12 @@ background-color: var(--button-hov-foc);
 .filter > .container {
     padding-top: 94px;
     padding-bottom: 94px;
-    outline: 1px solid darkred;
+  
 }
 .filter-item {
     display: flex;
     justify-content: center;
-    outline: 1px solid darkred;
+  
 }
 .filter-item .list-button + .list-button {
     margin-left: 8px;
@@ -298,15 +300,15 @@ background-color: var(--button-hov-foc);
     margin: 0;
     padding: 0;
     display: flex;
-    outline: 1px solid darkred;
+  
     flex-wrap:wrap;
     margin-left: calc(-1*var(--examples-work-gap));
     margin-top: calc(-1*var(--examples-work-gap));
 
 }
 .examples-work > li {
-    flex-basis: calc(100%/3 - var(--examples-work-gap));
-    outline: 1px solid darkred;
+    flex-basis: calc(100% / 3 - var(--examples-work-gap));
+
     margin-left: var(--examples-work-gap);
     margin-top: var(--examples-work-gap);
 }
@@ -314,7 +316,6 @@ background-color: var(--button-hov-foc);
 
 .list-button {
     margin-bottom: 50px;
-    background-color: #188CE8;
 }
 
 .filter-button {
@@ -340,7 +341,8 @@ background-color: var(--button-hov-foc);
     padding: 6px,25px;
 }
 .examples-title {
-    margin: 20px 24px 0px 24px;;
+    margin: 0;
+    padding: 0;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -349,7 +351,10 @@ background-color: var(--button-hov-foc);
 }
 
 .examples-text {
-    margin: 4px 24px 20px 24px;
+    margin: 0;
+    padding: 0;
+    margin-top: 4px;
+
     font-size: 16px;
     line-height: 2;
     letter-spacing: 0.03em;
@@ -358,4 +363,9 @@ background-color: var(--button-hov-foc);
 
 .logo-foot > a {
     color: var(--logo-color-futer);
+}
+
+.examples-item {
+padding: 24px 20px;
+border: 1px solid var(--examples-item-bordcolor);
 }
