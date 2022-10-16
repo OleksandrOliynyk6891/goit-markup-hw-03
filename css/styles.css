@@ -106,13 +106,10 @@ align-items: center;
     margin: 0px;
     padding: 0px;
     display: flex;
-    margin-left: calc(-1* var(--examples-work-gap));
-    margin-bottom: calc(-1* var(--examples-work-gap));
+    gap: 30px;
 }
 .features-list>li {
-    flex-basis: calc(100%/4 - var(--examples-work-gap));
-    margin-left: var(--examples-work-gap);
-    margin-bottom: var(--examples-work-gap);
+    flex-basis: calc((100% - 3 * 30px ) / 4);
 }
 
 .work-item .list-item +.list-item,
@@ -298,15 +295,15 @@ background-color: var(--button-hov-foc);
     color: var(--tagline-color);
 }
 .mail-link, .tel-link {
+    display: block;
     margin-top: 9px;
-    margin-bottom: 9px;
     color:var(--footer-link-color);
 }
     
 
                                     /* portfolio */
 
-.filter > .container {
+.filter {
     padding-top: 94px;
     padding-bottom: 94px;
   
